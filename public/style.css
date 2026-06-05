@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+body { font-family: -apple-system, "Apple SD Gothic Neo", sans-serif; margin: 0; background:#f4f6f9; color:#222; }
+header { background:#1a3a5c; color:#fff; padding:20px 30px; }
+header h1 { margin:0; }
+.sub { opacity:.85; margin:5px 0 12px; font-size:14px; }
+.user-bar select { padding:6px; border-radius:6px; border:none; }
+main { padding:24px 30px; max-width:1100px; margin:auto; }
+section { background:#fff; padding:20px; border-radius:10px; margin-bottom:24px; box-shadow:0 2px 6px rgba(0,0,0,.05); }
+#search { width:100%; padding:8px 12px; border:1px solid #ccc; border-radius:6px; margin-bottom:14px; }
+.grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(240px,1fr)); gap:14px; }
+.card { border:1px solid #e2e6ec; border-radius:8px; padding:14px; }
+.card h3 { margin:0 0 6px; font-size:16px; }
+.card .author { color:#666; font-size:13px; margin-bottom:8px; }
+.card .meta { font-size:13px; margin-bottom:10px; }
+.card .actions { display:flex; gap:6px; }
+button { cursor:pointer; padding:6px 10px; border:none; border-radius:6px; font-size:13px; }
+.btn-like   { background:#ffe1e1; color:#c0392b; }
+.btn-loan   { background:#1a3a5c; color:#fff; }
+.btn-return { background:#27ae60; color:#fff; }
+table { width:100%; border-collapse:collapse; }
+th, td { padding:8px; border-bottom:1px solid #eee; text-align:left; font-size:14px; }
+.tag { font-size:11px; padding:2px 6px; border-radius:4px; background:#eef; color:#335; }

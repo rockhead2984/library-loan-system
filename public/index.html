@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>도서관 시스템 (트랜잭션 격리수준 데모)</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <h1>📚 도서관 대출 시스템</h1>
+  <p class="sub">좋아요 = <b>READ COMMITTED</b> · 대출/반납 = <b>SERIALIZABLE</b></p>
+  <div class="user-bar">
+    사용자:
+    <select id="userSelect"></select>
+  </div>
+</header>
+
+<main>
+  <section>
+    <h2>도서 목록</h2>
+    <input id="search" placeholder="제목/저자 검색..." />
+    <div id="bookList" class="grid"></div>
+  </section>
+
+  <section>
+    <h2>내 대출 현황</h2>
+    <table id="loanTable">
+      <thead><tr><th>제목</th><th>대출일</th><th>반납기한</th><th>상태</th><th></th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
