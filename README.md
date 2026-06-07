@@ -109,21 +109,4 @@ library-db/
 | POST   | /api/loans                    | 대출         | SERIALIZABLE    |
 | POST   | /api/loans/:id/return         | 반납         | SERIALIZABLE    |
 
----
-
-## 7. 동시성 테스트 시나리오 (PPT용 데모)
-
-**시나리오 A — 좋아요 (RC, 약한 격리):**
-같은 책에 동시 100건 좋아요 요청 → 모두 성공, `like_count`는 정확히 증가 (UPDATE 자체가 row-level lock 보장).
-
-**시나리오 B — 대출 (SER, 강한 격리):**
-재고 1권인 책에 동시 2건 대출 요청 → 1건 성공, 1건은 `40001` 충돌로 거부.
-→ 만약 RC로 했다면 둘 다 성공해 `available_copies = -1` 가능. **이게 SER이 필요한 이유.**
-
----
-
-## 8. 제출물
-
-- ✅ GitHub repo
-- ✅ PPT (이 README 7번 시나리오를 핵심 슬라이드로)
-- ⬜ 서비스 주소 (선택)
+## 7. 프로젝트 설명은 pdf로
