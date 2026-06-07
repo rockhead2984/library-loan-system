@@ -66,6 +66,7 @@ app.post('/api/books/:id/like', async (req, res) => {
         await client.query(
             'UPDATE books SET like_count = like_count + 1 WHERE id = $1',
             [book_id]);
+           
 
         await client.query('COMMIT');
         res.json({ ok: true, isolation: 'READ COMMITTED' });
